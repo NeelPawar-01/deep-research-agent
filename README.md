@@ -18,6 +18,30 @@ Instead of relying on a single LLM response, the system decomposes the problem i
 
 ---
 
+# Docker
+
+## Build
+
+```bash
+docker build -t deep-research-agent .
+```
+
+## Run
+
+```bash
+docker run -p 7860:7860 ^
+-e OPENAI_API_KEY=YOUR_OPENAI_API_KEY ^
+deep-research-agent
+```
+
+Open
+
+```
+http://localhost:7860
+```
+
+---
+
 # Features
 
 - Autonomous research planning
